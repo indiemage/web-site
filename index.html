@@ -1,47 +1,131 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>IndieMage</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html, body {
-      width: 100%;
-      height: 100%;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    body {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #f57c00;
-      color: white;
-    }
-
-    h1 {
-      font-size: clamp(40px, 8vw, 96px);
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-align: center;
-    }
-
-    main { text-align: center; padding: 24px; }
-    nav { margin-top: 24px; }
-    a { color: white; text-underline-offset: 4px; }
-    a:focus-visible { outline: 2px solid white; outline-offset: 6px; }
-  </style>
+  <title>Indie Mage — Independent Game Studio</title>
+  <meta name="description" content="Indie Mage is an independent game studio making mobile and PC games, including Battle Burst and Fatalyst." />
+  <meta property="og:title" content="Indie Mage — Independent Game Studio" />
+  <meta property="og:description" content="Mobile and PC games from Indie Mage: Battle Burst and Fatalyst." />
+  <meta property="og:url" content="https://indiemage.com/" />
+  <meta property="og:image" content="https://indiemage.com/assets/img/logo-large.jpg" />
+  <meta name="theme-color" content="#0e0b1a" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/style.css" />
 </head>
 <body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">
+        <img class="brand-mark" src="/assets/img/logo.jpg" alt="" width="32" height="32" />
+        Indie Mage
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="#games">Games</a>
+        <a href="#about" class="hide-sm">Studio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
   <main>
-    <h1>IndieMage</h1>
-    <nav aria-label="Legal"><a href="/battle-burst/privacy-policy/">Battle Burst · Privacy Policy</a></nav>
+    <section class="hero">
+      <div class="wrap">
+        <div>
+          <span class="eyebrow">Independent game studio</span>
+          <h1>We craft games with a little <span class="glow">magic</span>.</h1>
+          <p class="lead">Indie Mage is a small independent studio making games for mobile and PC — from tactical army battles on mobile to competitive card tactics on Steam.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#games">See our games</a>
+            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          </div>
+        </div>
+        <img class="hero-logo" src="/assets/img/logo-large.jpg" alt="Indie Mage logo" width="340" height="340" />
+      </div>
+    </section>
+
+    <section id="games">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Our games</h2>
+          <p>Mobile and PC titles from the studio.</p>
+        </div>
+
+        <div class="games">
+          <a class="game-card" href="/battle-burst/">
+            <div class="game-cover">
+              <img class="cover" src="/assets/img/battle-burst-banner.jpg" alt="Battle Burst key art" width="1024" height="500" loading="lazy" />
+            </div>
+            <div class="game-body">
+              <h3>Battle Burst</h3>
+              <p>A fantasy strategy game for Android. Build your army, upgrade units and win tactical battles — then crush the enemy base!</p>
+              <div class="tags">
+                <span class="tag soon">Closed beta</span>
+                <span class="tag">Android</span>
+                <span class="tag">Google Play</span>
+              </div>
+              <span class="card-link">Learn more →</span>
+            </div>
+          </a>
+
+          <a class="game-card" href="https://store.steampowered.com/app/5114410/Fatalyst/" target="_blank" rel="noopener">
+            <div class="game-cover alt">
+              <img class="cover" src="/assets/img/fatalyst-banner.jpg" alt="Fatalyst key art" width="920" height="430" loading="lazy" />
+            </div>
+            <div class="game-body">
+              <h3>Fatalyst</h3>
+              <p>A competitive tactical card game where positioning, timing and prediction decide the battle. Build your deck and outsmart your opponent.</p>
+              <div class="tags">
+                <span class="tag soon">Coming soon</span>
+                <span class="tag">PC</span>
+                <span class="tag">Steam</span>
+              </div>
+              <span class="card-link">Wishlist on Steam →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap about">
+        <div>
+          <h2>About the studio</h2>
+          <p>Indie Mage is an independent developer focused on making games that are easy to pick up and fun to come back to. We design, build and publish our games ourselves.</p>
+          <p>Currently working on Battle Burst for mobile and Fatalyst for Steam.</p>
+        </div>
+        <div class="facts">
+          <div class="fact"><strong>Platforms</strong><span>Android (Google Play) and PC (Steam)</span></div>
+          <div class="fact"><strong>Games</strong><span>Battle Burst · Fatalyst</span></div>
+          <div class="fact"><strong>Contact</strong><span>indiemagestudio@gmail.com</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <div class="contact-box">
+          <h2>Say hello</h2>
+          <p>Questions, feedback, press or business inquiries — we read every message.</p>
+          <a class="btn btn-primary" href="mailto:indiemagestudio@gmail.com">indiemagestudio@gmail.com</a>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© 2026 Indie Mage</span>
+      <nav aria-label="Footer">
+        <a href="/battle-burst/">Battle Burst</a>
+        <a href="https://store.steampowered.com/app/5114410/Fatalyst/" target="_blank" rel="noopener">Fatalyst on Steam</a>
+        <a href="/battle-burst/privacy-policy/">Battle Burst Privacy Policy</a>
+        <a href="mailto:indiemagestudio@gmail.com">Contact</a>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>
